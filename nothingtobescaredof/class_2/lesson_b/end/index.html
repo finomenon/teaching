@@ -3,13 +3,31 @@
 	<head>
 		<title>Dog Lawyer: Woof!</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<!-- Link to css/styles.css. Add attributes rel="stylesheet" and  type="text/css" -->
-		<!-- Create a style tag in the header and set "background" to red -->
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
 
-	<!-- Create a sytle on the body tag. Set the 'background' to yellow -->
 	<body>
 		<div id="main">
+			<div id="header">
+				<nav>
+					<a href="javascript:void(0)">
+						<img src="images/logo.png">
+					</a>
+					<a href="pages/bark.html">Bark</a>
+					<a href="pages/chase.html">Chase</a>
+					<a href="pages/pant.html">Pant</a>
+					<a href="pages/wag.html">Wag</a>
+					<a href="pages/habeascorpus.html">Habeas Corpus</a>
+				</nav>
+				<div id="social">
+					<a href="https://twitter.com/dogethedog">
+						<img src="images/twitter.png">
+					</a>
+					<a href="https://www.facebook.com/DogeTheDog">
+						<img src="images/facebook.png">
+					</a>
+				</div>
+			</div>
 			<div id="banner">
 				<h1>Hello, Humans et al!</h1>
 				<p>I am Dog. I have lawyer degree.</p>
@@ -89,7 +107,7 @@
 								<option>Wrongful Coning</option>
 								<option>Need Walking</option>
 							</select>
-							<input type="text" name="emailaddress" value="info@doglawyer.com">
+							<input type="text" name="emailaddress" value="your.address@email.com">
 							<input type="radio" name="species" value="human" checked>Human
 							<input type="radio" name="species" value="dog">Dog
 							<input type="submit" value="Submit" class="btn pill">

@@ -1,0 +1,350 @@
+/*COLORS*/
+/*dark purple: 77129b*/
+/*bright purple: 9c1fde*/
+
+/*light tan: caa575*/
+/*dark tan: c88d45*/
+
+/*--------------------
+  --- GLOBAL STUFF ---
+  --------------------*/
+html,
+body {
+  width: 100%;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 16px;
+}
+
+html, body, div, a, img, p, nav, ul, li, select, form, input, video, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: -webkit-linear-gradient(#ccc, #666); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ccc, #666); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ccc, #666); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ccc, #666); /* Standard syntax (must be last) */
+}
+
+div {
+  display: block;
+}
+
+a {
+  color: #9c1fde;
+}
+
+a:hover {
+  color: #caa575;
+}
+
+a, p {
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h2 {
+  font-size: 24px;
+  /*Set 'text-shadow' to on module headers*/
+  /*Add multiple text shadows values in one property*/
+}
+
+#main {
+  width: 1080px;
+  margin: 0 auto;
+  background:radial-gradient(#ccc, white);
+  text-align: center;
+  -webkit-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
+  -moz-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
+  box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
+}
+
+/*----------------------
+  --- SHARED CLASSES ---
+  ----------------------*/
+.strong {
+  font-weight: bold;
+}
+.btn{
+  text-decoration:none;
+  color:white;
+  font-size:11px;
+  font-weight:bold;
+  padding:0 15px;
+  line-height:32px;
+  height: auto;
+  display:inline-block;
+  text-align:center;
+  background: #77129b;
+  /****TASK 2-A: Add a Gradient to the button*/
+  /*Set the background to a 'linear-gradient' setting colors to #77129b and #9c1fde */
+}
+
+.btn:hover {
+  /****TASK 2-B: Add a Gradient to the button hover*/
+  /*Set the background to a 'linear-gradient' swapping colors to #9c1fde and #77129b */
+  color: white;
+}
+
+.btn.pill {
+  /****TASK 2-D: This button looks too harsh. Lets give it some rounded corners*/
+  /*Set -webkit -moz boder-radius to 16px*/
+}
+
+.module {
+  float: left;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.module .row-full {
+  width: 100%;
+  padding: 8px 0;
+  /****TASK 2-C: These module Headers are kind of bording
+                 Lets add a gradient here too!*/
+  /*Set the background to a 'linear-gradient' swapping colors to #c88d45 and #caa575 */
+}
+.module .row-max {
+  max-width: 1080px;
+  height: auto;
+  padding: 1%;
+}
+.module img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.col-4 {
+  float: left;
+  width: 23%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-3 {
+  float: left;
+  width: 31.33%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-2 {
+  float: left;
+  width: 48%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-1 {
+  float: left;
+  width: 98%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-2-3 {
+  float: left;
+  width: 64.66%;
+  margin: 1%;
+  height: auto;
+}
+
+
+/*--------------------
+  --- HEADER / NAV ---
+  --------------------*/
+/****TASK 1: Lets make a header */
+#header {
+  /*Give the header a height of 100px,
+  set the background URL to "../images/bg.jpg", 
+  set background-repeat to 'repeat',
+  and background-position to top center;*/
+}
+
+nav {
+  /*Float the nav left*/
+}
+
+nav img {
+  /*Lets give a little padding to the image 10px
+  And lets align the text in the middle of the image with vertical-align*/
+}
+
+nav a {
+  /*Set the font-size to 14px, 
+  Set the font-weight to thin,
+  Add this padding 0 8px,
+  set the font color to white, 
+  for uppercase with text-transform
+  and remove the underline with text-decoration*/
+}
+
+#social {
+  /*Float the nav to the right
+  Add the following margins:
+      margin-top: 33px;
+      margin-right: 10px;*/
+}
+
+#social a {
+  /*Add the following padding 0 10px 0 0*/
+}
+
+
+/*--------------
+  --- BANNER ---
+  --------------*/
+#banner {
+  color: black;
+  background-image: url("../images/courtroom.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1080px auto;
+  padding: 60px;
+}
+
+#banner p {
+  font-size: 16px;
+  padding: 6px 0 24px;
+}
+
+/*----------------
+  --- SERVICES ---
+  ----------------*/
+
+#services ul, 
+#services p {
+  font-size: 14px;
+  text-align: left;
+}
+#services ul {
+  padding-left: 12px;
+}
+
+
+/*-----------------------
+  --- SUCCESS STORIES ---
+  -----------------------*/
+
+#success-stories img:hover {
+  color: black;
+  /****TASK 3: Time to learn about transforms */
+  /*Add -webkit -moz -ms -o-transform scale(). set to 1.1 larger*/
+  /*Lets mess around and try adding rotate(10deg)*/
+}
+
+#success-stories img {
+  /****TASK 4-A: It's so jumpy though. Can we make it smoother?
+                 YES! With Transitions! */
+  /*Add -webkit -moz -ms -o-transition 'all' with 'ease-out' for 0.12s;*/
+}
+
+/*--------------------
+  --- CONTACT FORM ---
+  --------------------*/
+#contact p {
+  font-size: 16px;
+}
+
+#contact .pill {
+  margin: 20px 0;
+}
+
+.contact-form:hover {
+  /****TASK 4-A: Hey, remember our form. Where did it go?
+                 Lets see if we can transition it into view.
+                 First, lets just jump into view*/
+  /*Change the height to 170px on hover*/
+}
+.contact-form {
+  height: 60px;
+  overflow: hidden;
+  /****TASK 4-B: Now, lets add the transition*/
+  /*Set -webkit -moz -o and transition-duration to 0.3s*/
+}
+
+form {
+  background: #caa575;
+  -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+  -moz-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+  box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+}
+select, input[type="text"], input[type="submit"] {
+  height: 34px;
+  font-size: 16px;
+  border: 1px solid #666;
+}
+
+select {
+  margin: 30px 0;
+  width: 160px;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  width: 240px;
+  padding: 0 10px;
+}
+
+input[type="radio"] {
+  cursor: pointer;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  color: white;
+  cursor: pointer;
+  margin: 20px 0 20px 20px !important;
+  width: 100px;
+  background:linear-gradient(#9c1fde, #77129b);
+}
+
+
+/*----------------------
+  --- ANIMATION TEST ---
+  ----------------------*/
+/****TASK 5: ANIMATION!
+             It's actually a little different than transitions in CSS*/
+#animation {
+  /*Turn visibility on*/
+  visibility: hidden;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.square:hover {
+  /*Add -webkit-animation and animation.
+  Match name to keyframe names below. set to 5s*/
+}
+
+/*Add @-webkit-keyframes and @keyframes selectors
+Give them both the same name
+Set up 'from' and 'to' selectors in both
+Change the background color from red to yellow
+Use -ms-transform, -webkit-transform and transform to rotate from 0deg to 270deg
+Use %s instead of 'from' and 'to'*/
+
+
+/*--------------
+  --- FOOTER ---
+  --------------*/
+footer {
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  display: inline-block;
+  padding: 8px 0;
+}
