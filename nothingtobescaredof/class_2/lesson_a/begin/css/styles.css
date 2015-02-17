@@ -56,7 +56,6 @@ h2 {
   margin: 0 auto;
   background:radial-gradient(#ccc, white);
   text-align: center;
-  padding-bottom: 30px;
   -webkit-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
   -moz-box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
   box-shadow: 0px 0px 150px 50px rgba(0,0,0,0.33);
@@ -86,15 +85,7 @@ h2 {
   color: white;
 }
 
-.img-btn {
-  padding: 16px;
-  height: auto;
-  display:inline-block;
-  text-align:center;
-  background:linear-gradient(#77129b, #9c1fde);
-}
-
-.btn.pill, .img-btn.pill {
+.btn.pill {
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -103,6 +94,7 @@ h2 {
 .module {
   float: left;
   width: 100%;
+  margin-bottom: 32px;
 }
 .module .row-full {
   width: 100%;
@@ -112,11 +104,12 @@ h2 {
 .module .row-max {
   max-width: 1080px;
   height: auto;
-  padding: 16px 1% 32px;
+  padding: 1%;
 }
 .module img {
   width: 100%;
   height: auto;
+  cursor: pointer;
 }
 
 .col-4 {
@@ -136,6 +129,20 @@ h2 {
 .col-2 {
   float: left;
   width: 48%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-1 {
+  float: left;
+  width: 98%;
+  margin: 1%;
+  height: auto;
+}
+
+.col-2-3 {
+  float: left;
+  width: 64.66%;
   margin: 1%;
   height: auto;
 }
@@ -202,15 +209,15 @@ nav a {
   --- SERVICES ---
   ----------------*/
 
-ul {
- /* margin-left: 364px;
-  padding: 30px 0 0;*/
-  text-decoration: none;
+#services ul, 
+#services p {
+  font-size: 14px;
+  text-align: left;
+}
+#services ul {
+  padding-left: 12px;
 }
 
-li {
-  list-style-type: none;
-}
 
 /*-----------------------
   --- SUCCESS STORIES ---
@@ -231,11 +238,6 @@ li {
   -o-transform:      scale(1.1);
 }
 
-.last {
-  margin-bottom: 32px;
-}
-
-
 /*--------------------
   --- CONTACT FORM ---
   --------------------*/
@@ -243,6 +245,28 @@ li {
   font-size: 16px;
 }
 
+#contact .pill {
+  margin: 20px 0;
+}
+
+.contact-form {
+  height: 60px;
+  overflow: hidden;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.contact-form:hover {
+  height: 170px;
+}
+
+form {
+  background: #caa575;
+  -webkit-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+  -moz-box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+  box-shadow: inset 0px 0px 56px 0px rgba(0,0,0,0.30);
+}
 select, input[type="text"], input[type="submit"] {
   height: 34px;
   font-size: 16px;
@@ -252,6 +276,7 @@ select, input[type="text"], input[type="submit"] {
 select {
   margin: 30px 0;
   width: 160px;
+  cursor: pointer;
 }
 
 input[type="text"] {
@@ -268,7 +293,22 @@ input[type="radio"] {
 input[type="submit"] {
   color: white;
   cursor: pointer;
-  margin-left: 20px;
+  margin: 20px 0 20px 20px !important;
   width: 100px;
   background:linear-gradient(#9c1fde, #77129b);
+}
+
+/*--------------
+  --- FOOTER ---
+  --------------*/
+footer {
+  width: 100%;
+  font-size: 12px;
+  color: white;
+  margin-top: 70px;
+  background-image: url(../images/bg.jpg);
+  background-repeat: repeat;
+  background-position: top center;
+  display: inline-block;
+  padding: 8px 0;
 }
