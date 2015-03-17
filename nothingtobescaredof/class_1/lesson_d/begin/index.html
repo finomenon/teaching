@@ -3,17 +3,76 @@
 	<head>
 		<title>Dog Lawyer: Woof!</title>
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
 	</head>
 
 	<body>
-		<p>Hello, Humans! I am Dog. I have law degree.</p>
-		<!-- NOTE: load in browser after each step -->
-		<!-- Step 1: Create a div -->
-		<!-- Step 2: Create a link tag -->
-		<!-- Step 3: Create an image -->
-		<!-- Step 4: Create an unordered list -->
-		<!-- Step 5: Create a select menu -->
-		<!-- Step 6: Create in input text, radio and submit types -->
-		<!-- Step 7: Wrap the input types in a form tag -->
+		<div id="main">
+			<div id="header">
+				<nav>
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
+					<a href="pages/bark.html">Bark</a>
+					<a href="pages/chase.html">Chase</a>
+					<a href="pages/pant.html">Pant</a>
+					<a href="pages/wag.html">Wag</a>
+					<a href="pages/habeascorpus.html">Habeas Corpus</a>
+				</nav>
+				<div id="social">
+					<a href="https://twitter.com/dogethedog">
+						<img src="images/twitter.png">
+					</a>
+					<a href="https://www.facebook.com/DogeTheDog">
+						<img src="images/facebook.png">
+					</a>
+				</div>
+			</div>
+			<div class="module">
+				<h2>Hello, Humans! I am Dog. I have lawyer degree.</h2>
+				<p>As your lawyer, I advise you not to roll over. So, they left the shoes on the ground completely unattended? That is most assuredly entrapment. They punished you for barking? Apparently they've never heard of The First Amendment. Who's a good boy? Pay your initial retainer, and I'll be able to answer that question. So, your owner made you fetch the ball, but they never actually threw it? I'd say you have a strong case for fraud. I dug up some info on your case. I also found my bone from last week.</p>
+			</div>
+			<div class="module">
+				<ul>
+					<li>Digging</li>
+					<li>Chasing</li>
+					<li>Sniffing</li>
+				</ul>
+			</div>
+			<div class="module">
+				<select>
+					<option>Caged</option>
+					<option>Coned</option>
+					<option>Need Walk</option>
+				</select>
+				<form action="pages/subscribe.php">
+					<input type="text" name="emailaddress" value="name@email.com">
+					<input type="radio" name="species" value="dog" checked>Dog
+					<input type="radio" name="species" value="human">Human
+					<input type="submit" value="Submit">
+				</form>
+			</div>
+			<!--But what is this HTML 5 thing all about you might ask? 
+				Standards committees eventually realized two things. First, it makes a lot of sense to keep HTML focused on defining what your content is, and handing off other features like, the way your site looks and functions, to other tools like CSS and JavaScript. Second, developers want to do a LOT more than just link to stuff and make it look pretty. HTML5 includes a lot of tags to help you make your HTML code more semantic, and describe your content structure in more detail. It also includes a lot more advanced content features like the Canvas tag, and Media such as Video. Form more information about HTML 5, you can view this URL:
+				http://www.w3schools.com/html/default.asp
+			-->
+			<!-- Step 1: Create a <video> tag. Set the attributes as follows:
+							width="360" height="360" controls
+							NOTE: Controls does not have a value. This just means, "turn on this feature"
+			-->
+			<!-- Step 2: Inside the <video> tag, next two <source> tags. Set the attributes of each <source> tag as follows:
+				        	1) src="http://www.finomenon.com/stuff/teaching/videos/terrier.mp4" type="video/mp4"
+				         	2) src="http://www.finomenon.com/stuff/teaching/videos/bulldog.webm" type="video/webm"
+			-->
+			<!-- Step 3: Underneath the last <source> tag, add this text:
+							Your browser does not support the video tag.
+							This text will display if none of the <source> tags are supported by your browser
+			-->
+
+			<!--Okay, yeah, video is pretty dope. But my site looks like crap. 
+				That's where CSS comes in!
+			-->
+			<!-- Step 4: Uncomment line 6 in the header of this page -->
+		</div>
 	</body>
 </html>

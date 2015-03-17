@@ -6,9 +6,52 @@
 	</head>
 
 	<body>
-		<!-- NOTE: load in browser after each step -->
-		<!-- Step 1: Just write some text -->
-		<!-- Step 2: Write some text in an <h1> tag -->
-		<!-- Step 3: Write some text in a <p> tag -->
+		<!--Let's play with a few more common tags
+			For a complete list of all availabel HTML tags, visit this URL: the http://www.w3schools.com/tags/default.asp
+		-->
+		<!-- Step 1: Underneath <div id="header"></div>, create 3 more <div> tags, and add and class attribute set to "module" for each one.  
+						NOTE: The id attribute is a unique identifier. The class attribute creates specifies something that you will want to re-use many times.
+		-->
+		<!-- Step 2: Wrap all of the <div> elements inside one <div> element, and set the id attribute to "main". It is good structural practice to do this. -->
+		<!-- Step 3: Inside the first <div class="module">, create an <h2> tag and a <p> tag. Set the content as follows:
+			        	h2) Hello, Humans! I am Dog. I have lawyer degree.
+			         	p) As your lawyer, I advise you not to roll over. So, they left the shoes on the ground completely unattended? That is most assuredly entrapment. They punished you for barking? Apparently they've never heard of The First Amendment. Who's a good boy? Pay your initial retainer, and I'll be able to answer that question. So, your owner made you fetch the ball, but they never actually threw it? I'd say you have a strong case for fraud. I dug up some info on your case. I also found my bone from last week.
+		-->
+		<!-- Step 4: Inside the second <div class="module">, create a <ul> tag. Inside the <ul> tag, nest 3 <li> tags. Set the content of each <li> tag as follows:
+			        	1) Digging
+						2) Chasing
+						3) Sniffing
+		-->
+		<!-- Step 5: Inside the third <div class="module">, create a <select> tag. Inside the <select> tag, nest 3 <option> tags. Set the content of each <option> tag as follows:
+			        	1) Caged
+						2) Coned
+						3) Need Walk
+		-->
+		<!-- Step 6: Inside the third <div class="module">, underneath the <select> tag, create a <form> tag. On the form tag, create an action attribute and set it to "pages/subscribe.php". Inside the <form> tag, nest 4 <input> tags. Set the attributes of each <input> tag as follows:
+			        	1) type="text" name="emailaddress" value="name@email.com"
+						2) type="radio" name="species" value="dog" checked
+						3) type="radio" name="species" value="human"
+						4) type="submit" value="Submit"
+		-->
+		<div id="header">
+			<nav>
+				<a href="index.html">
+					<img src="images/logo.png">
+				</a>
+				<a href="pages/bark.html">Bark</a>
+				<a href="pages/chase.html">Chase</a>
+				<a href="pages/pant.html">Pant</a>
+				<a href="pages/wag.html">Wag</a>
+				<a href="pages/habeascorpus.html">Habeas Corpus</a>
+			</nav>
+			<div id="social">
+				<a href="https://twitter.com/dogethedog">
+					<img src="images/twitter.png">
+				</a>
+				<a href="https://www.facebook.com/DogeTheDog">
+					<img src="images/facebook.png">
+				</a>
+			</div>
+		</div>
 	</body>
 </html>

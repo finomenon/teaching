@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- Step 1: create a title -->
-		<!-- Step 2: add a favicon -->
-		<!-- Step 3: load in browser -->
+		<title>Dog Lawyer: Woof!</title>
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	</head>
 
 	<body>
+		<!--Let's create a Header. 
+			So ... HOW DO I CHOOSE MY TAGS?
+			1) Here is a list of all possible tags. Read, and know them:  the http://www.w3schools.com/tags/default.asp
+			2) Your tags should be semeantic. They should describe what goes where, specifically how your content is structured. This is called, The Semantic Web. Many tags were deprecated with HTML 4 and 5, because they did not meet this critera (eg: blink, strong, etc, describe the way a site looks, which is really the job of CSS). You should avoid depricated tags. 
+			3) Is it supported by the necessary browsers: http://caniuse.com/
+		-->
+
+		<!-- Step 1: Crate a <nav> element nested inside the <div id="header"> tag. The nav tag is designed to hold all global navigation links. -->
+		<!-- Step 2: Add six links inside the <nav> tag, using the <a> tag. -->
+		<!-- Step 3: Add an href="" attribute to each <a> tag. Set the values as follows:
+			        	1) href="index.html"  NOTE: This is called a "relative URL". Linking to files, or other pages within your site should use relative URLS
+			         	2) href="pages/bark.html"
+			         	3) href="pages/chase.html"
+			         	4) href="pages/pant.html"
+			         	5) href="pages/wag.html"
+			         	6) href="pages/habeascorpus.html" 
+		-->
+        <!-- Step 4: Add text as content to each link as well. This will become the user-facing label of the link:
+			        	1) ***don't add any content here yet
+			         	2) Bark
+			         	3) Chase
+			         	4) Pant
+			         	5) Wag
+			         	6) Habeas Corpus
+		-->
+		<!-- Step 5: Lets add a logo to the first link using the <img> tag. Set the the src attribute to "images/logo.png" -->
+		<!-- Step 6: Create another <div> underneath the <nav> element, and set the id attribut to "social" -->
+		<!-- Step 7: Create two links inside this new <div>, and set the href attributes as follows:
+						1) https://twitter.com/dogethedog   NOTE: This is called an "absolute URL". Links that point to pages or sites outside of your site, should use the complet address starting with http
+						2) https://www.facebook.com/DogeTheDog
+		-->
+		<!-- Step 8: Add an icon for each link using the <img> tag, similar to how we created the logo. Set the src attributes as follows:
+						1) images/twitter.png
+						2) images/facebook.png
+		-->
+
+
+		<div id="header">
+			<h1>Hello, World!</h1>
+		</div>
 	</body>
 </html>
