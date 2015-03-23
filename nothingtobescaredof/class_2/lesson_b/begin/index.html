@@ -8,45 +8,26 @@
 
 	<body>
 		<div id="main">
-			<!-- LETS CREATE A HEADER! -->
-
-			<!-- 
-			"Well, wait ... how do I get started?", you all just asked. 
-			"How can I choose my tags and stuff?"
-			First, let me explain HTML5 and the semantic web breifly. 
-			...
-			...
-			...
-			Okay, now, check out these resrouces. Here you will find every possible tag and CSS property. And what browsers support it. 
-			http://www.w3schools.com/tags/default.asp
-			http://www.w3schools.com/cssref/default.asp
-			http://caniuse.com/
-
-			Okay you pros, lets get started! -->
-
-
-			<!-- Step 1: Lets create a div with "header" as the id attribute value. This will be used to wrap everything in the header.  -->
-
-			<!-- Step 2: Create some CSS for the header. See css/styles.css 'Task 1' -->
-
-			<!-- Step 3: Lets finish our HTML. Add a "nav" and anmother div with "social" as the id attribute value -->
-
-			<!-- Step 4: Inside nav, create six <a></a> tags. Set the following href attribute values - content string. Order is important in this case.
-				1. href: javascript:void(0), content: no content
-				2. href: pages/bark.html, content: Bark
-				3. href: pages/chase.html, content: Chase
-				4. href: pages/pant.html, content: Pant
-				5. href: pages/wag.html, content: Wag
-				6. href: pages/habeascorpus.html, content: Habeas Corpus -->
-
-			<!-- Step 5: Lets create an image link. For the first <a></a> tag, wrap it around an <img> tag. Set the src attribute value to "images/logo.png" -->
-
-			<!-- Step 6: In the div tag with id="social", add two more image links just like in step 5. Use the following href and src attribute values for each. Order is not so important.
-				1. href: https://twitter.com/dogethedog, src: images/twitter.png
-				2. href: https://www.facebook.com/DogeTheDog, src: images/facebook.png -->
-
-			<!-- DONE! Lets go back to the CSS -->
-
+			<div id="header">
+				<nav>
+					<a href="index.html">
+						<img src="images/logo.png">
+					</a>
+					<a href="pages/bark.html">Bark</a>
+					<a href="pages/chase.html">Chase</a>
+					<a href="pages/pant.html">Pant</a>
+					<a href="pages/wag.html">Wag</a>
+					<a href="pages/habeascorpus.html">Habeas Corpus</a>
+				</nav>
+				<div id="social">
+					<a href="https://twitter.com/dogethedog">
+						<img src="images/twitter.png">
+					</a>
+					<a href="https://www.facebook.com/DogeTheDog">
+						<img src="images/facebook.png">
+					</a>
+				</div>
+			</div>
 			<div id="banner">
 				<h1>Hello, Humans et al!</h1>
 				<p>I am Dog. I have lawyer degree.</p>
@@ -58,7 +39,7 @@
 				</div>
 				<div class="row-max">
 					<div class="col-2-3">
-						<p>As your lawyer, I advise you not to roll over. So, they left the shoes on the ground completely unattended? That is most assuredly entrapment. They punished you for barking? Apparently they've never heard of The First Amendment. Who's a good boy? Pay your initial retainer, and I'll be able to answer that question. So, your owner made you fetch the ball, but they never actually threw it? I'd say you have a strong case for fraud. I dug up some info on your case. I also found my bone from last week. 
+						<p>As your lawyer, I advise you not to roll over. So, they left the shoes on the ground completely unattended? That is most assuredly entrapment. They punished you for barking? Apparently they've never heard of The First Amendment. Who's a good boy? Pay your initial retainer, and I'll be able to answer that question. So, your owner made you fetch the ball, but they never actually threw it? I'd say you have a strong case for fraud. I dug up some info on your case. I also found my bone from last week. </p>
 					</div>
 					<div class="col-3">
 						<ul>

@@ -49,12 +49,11 @@ h1 {
 
 h2 {
   font-size: 24px;
-  /*Set 'text-shadow' to on module headers*/
-  /*Add multiple text shadows values in one property*/
+  text-shadow: -1px -1px #fff;
 }
 
 #main {
-  width: 1080px;
+  width: 800px;
   margin: 0 auto;
   background:radial-gradient(#ccc, white);
   text-align: center;
@@ -80,19 +79,22 @@ h2 {
   display:inline-block;
   text-align:center;
   background: #77129b;
-  /****TASK 2-A: Add a Gradient to the button*/
+  /****STEP 2-A: Add a Gradient to the button*/
   /*Set the background to a 'linear-gradient' setting colors to #77129b and #9c1fde */
 }
 
 .btn:hover {
-  /****TASK 2-B: Add a Gradient to the button hover*/
+  /****STEP 2-B: Add a Gradient to the button hover*/
   /*Set the background to a 'linear-gradient' swapping colors to #9c1fde and #77129b */
   color: white;
 }
 
 .btn.pill {
-  /****TASK 2-D: This button looks too harsh. Lets give it some rounded corners*/
+  /****STEP 2-D: This button looks too harsh. Lets give it some rounded corners*/
   /*Set -webkit -moz boder-radius to 16px*/
+
+  /*for more cool stuff, check out CSS tricks*/
+  /*https://css-tricks.com/*/
 }
 
 .module {
@@ -103,7 +105,7 @@ h2 {
 .module .row-full {
   width: 100%;
   padding: 8px 0;
-  /****TASK 2-C: These module Headers are kind of bording
+  /****STEP 2-C: These module Headers are kind of bording
                  Lets add a gradient here too!*/
   /*Set the background to a 'linear-gradient' swapping colors to #c88d45 and #caa575 */
 }
@@ -157,7 +159,7 @@ h2 {
 /*--------------------
   --- HEADER / NAV ---
   --------------------*/
-/****TASK 1: Lets make a header */
+/****STEP 1: Lets make a header */
 #header {
   /*Give the header a height of 100px,
   set the background URL to "../images/bg.jpg", 
@@ -232,13 +234,13 @@ nav a {
 
 #success-stories img:hover {
   color: black;
-  /****TASK 3: Time to learn about transforms */
+  /****STEP 3: Time to learn about transforms */
   /*Add -webkit -moz -ms -o-transform scale(). set to 1.1 larger*/
   /*Lets mess around and try adding rotate(10deg)*/
 }
 
 #success-stories img {
-  /****TASK 4-A: It's so jumpy though. Can we make it smoother?
+  /****STEP 4-A: It's so jumpy though. Can we make it smoother?
                  YES! With Transitions! */
   /*Add -webkit -moz -ms -o-transition 'all' with 'ease-out' for 0.12s;*/
 }
@@ -255,7 +257,7 @@ nav a {
 }
 
 .contact-form:hover {
-  /****TASK 4-A: Hey, remember our form. Where did it go?
+  /****STEP 4-A: Hey, remember our form. Where did it go?
                  Lets see if we can transition it into view.
                  First, lets just jump into view*/
   /*Change the height to 170px on hover*/
@@ -263,7 +265,7 @@ nav a {
 .contact-form {
   height: 60px;
   overflow: hidden;
-  /****TASK 4-B: Now, lets add the transition*/
+  /****STEP 4-B: Now, lets add the transition*/
   /*Set -webkit -moz -o and transition-duration to 0.3s*/
 }
 
@@ -308,7 +310,7 @@ input[type="submit"] {
 /*----------------------
   --- ANIMATION TEST ---
   ----------------------*/
-/****TASK 5: ANIMATION!
+/****STEP 5: ANIMATION!
              It's actually a little different than transitions in CSS*/
 #animation {
   /*Turn visibility on*/
