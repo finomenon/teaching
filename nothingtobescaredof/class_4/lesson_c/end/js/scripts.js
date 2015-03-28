@@ -10,9 +10,11 @@ function toggleEmailForm() {
 
 	if(open == true) {
 		$('#contact-form').css('height', '60px');
+		$('#pill-arrow').html("&#x25BC;");
 		open = false;
 	} else {
 		$('#contact-form').css('height', '295px');
+		$('#pill-arrow').html("&#x25B2;");
 		open = true;
 	}
 }

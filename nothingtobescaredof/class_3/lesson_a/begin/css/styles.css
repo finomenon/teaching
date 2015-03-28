@@ -90,11 +90,11 @@ h2 {
 }
 
 /*CONTAINERS*/
-/*TASK A: Make modules fluid!*/
+/*STEP 1: Make modules fluid!*/
 /*http://finomenon.com/stuff/teaching/nothingtobescaredof/images/fluid.gif*/
-/*in .module{} change width:1080px to width 100%, then reload*/
+/*in .module{} change width:700px to width 100% */
 .module {
-  width: 1080px;
+  width: 700px;
   margin: 0 auto;
 }
 .row {
@@ -105,7 +105,7 @@ h2 {
 .full-width {
   width: 98%;
 }
-/*TASK B: Lets learn about Max Width*/
+/*STEP 2: Lets learn about Max Width*/
 /*http://finomenon.com/stuff/teaching/nothingtobescaredof/images/max_width.gif*/
 /* Lets create a class called max-width */
 /*set width to 98% (minus 2 for 1% padding on everything)*/
@@ -223,7 +223,7 @@ nav a.lnk {
 #social a.icon-twitter {
   color: #4099FF;
 }
-/* Task E: Vector Images */
+/* STEP 5: Vector Images */
 /*http://finomenon.com/stuff/teaching/nothingtobescaredof/images/vectors.gif*/
 /* See, icomoon.io*/
 /* once icon-fonts are installed, you can use font properties to style them*/
@@ -242,7 +242,7 @@ nav a.lnk {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100% auto;
-  padding: 60px;
+  padding: 60px 0px;
 }
 @media (min-width: 480px) {
    #banner {
@@ -263,7 +263,7 @@ nav a.lnk {
 /*----------------
   --- SERVICES ---
   ----------------*/
-/*TASK C: Lets learn about Flow*/
+/*STEP 3: Lets learn about Flow*/
 /*http://finomenon.com/stuff/teaching/nothingtobescaredof/images/flow.gif*/
 /* Scale your browser to watch the Services text get cut off */
 /* Change height from 100px to auto, and reload in browser */
@@ -317,7 +317,7 @@ nav a.lnk {
   -o-transform:      scale(1.1);
 }
 
-/* Task D: BREAKPOINTS!!! */
+/* STEP 4: BREAKPOINTS!!! */
 /*http://finomenon.com/stuff/teaching/nothingtobescaredof/images/breakpoints.gif*/
 /* Start with mobile. Lets change '31.33%' to '98%' (minus 2% because everything has a 1% border)*/
 /* This will create a one column grid. */

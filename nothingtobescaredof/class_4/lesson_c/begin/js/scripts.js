@@ -53,14 +53,8 @@
 
 // LOOPS
 // Loops let you repeat the same thing many times.
-// Step 5: 	Inside the addSomeRandomSquares() function, create a for loop that repeats 10 times	
+// Step 6: 	Inside the addSomeRandomSquares() function, create a for loop that repeats 10 times	
 // 			Load in browser, and click the red square
-
-// Some practical examples of JS:
-// - Slideout menus
-// - Modal Windows
-// - Search Suggest
-// - Google analytics / click tracking
 
 
 console.log('Hello, World!');

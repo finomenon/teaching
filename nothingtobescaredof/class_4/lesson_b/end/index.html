@@ -1,139 +1,50 @@
-<!DOCTYPE html>
 <html>
 	<head>
-		<title>Dog Lawyer: Woof!</title>
-		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/styles.css" />
-		<link rel="stylesheet" type="text/css" href="css/fonts.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-		<script src="js/jquery-2.1.3.min.js"></script>
-		<script src="js/scripts.js"></script>
+		<title>Impress.js Tutorial</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+		<link href="css/styles.css" rel="stylesheet" />
 	</head>
-
 	<body>
-		<div id="main">
-			<div id="header" class="module">
-				<div class="row max-width">
-					<nav>
-						<a href="javascript:void(0)">
-							<img src="images/logo.png">
-						</a>
-						<a class="icon-menu"></a>
-						<a class="lnk" href="pages/bark.html">Bark</a>
-						<a class="lnk" href="pages/chase.html">Chase</a>
-						<a class="lnk" href="pages/pant.html">Pant</a>
-						<a class="lnk" href="pages/wag.html">Wag</a>
-						<a class="lnk" href="pages/habeascorpus.html">Habeas Corpus</a>
-					</nav>
-					<div id="social">
-						<!-- <a href="https://twitter.com/dogethedog">
-							<img src="images/twitter.png">
-						</a>
-						<a href="https://www.facebook.com/DogeTheDog">
-							<img src="images/facebook.png">
-						</a> -->
-						<a href="https://twitter.com/dogethedog" class="icon-twitter"></a>
-						<a href="https://www.facebook.com/DogeTheDog" class="icon-facebook"></a>
-					</div>
-				</div>
+		<div id="impress">	
+
+			<div class="no-support-message">
+				Sorry! Your browseris unable to load the impress slideshow. Try reloading the page in Google Chrome or Safari.
+			</div>	
+			
+			<div class="step" data-x="0" data-y="0">
+				<p>So, all I have to do is import one JS file ...</p>
 			</div>
-			<div id="banner" class="module">
-				<div class="row full-width">
-					<h1>Hello, Humans et al!</h1>
-					<p>I am Dog. I have lawyer degree.</p>
-					<a class="btn pill" href="pages/test.html">Get Trained About Lawyer Dog</a>
-				</div>
+			
+			<div class="step" data-x="2000" data-y="0">
+				<p>Then, I can just write HTML?</p>
 			</div>
-			<div id="services" class="module">
-				<div class="row full-width title">
-					<h2>Services</h2>
-				</div>
-				<div class="grid max-width">
-					<div class="col c12-8">
-						<p>As your lawyer, I advise you not to roll over. So, they left the shoes on the ground completely unattended? That is most assuredly entrapment. They punished you for barking? Apparently they've never heard of The First Amendment. Who's a good boy? Pay your initial retainer, and I'll be able to answer that question. So, your owner made you fetch the ball, but they never actually threw it? I'd say you have a strong case for fraud. I dug up some info on your case. I also found my bone from last week. 
-					</div>
-					<div class="col c12-4">
-						<ul>
-							<li>Nonsensical and Obsessive Digging</li>
-							<li>Chase Until Distracted</li>
-							<li>Pro Bono Inappropriate Sniffing</li>
-							<li>Public Defense Representation</li>
-						</ul>
-					</div>
-				</div>
+			
+			<div class="step" data-x="2000" data-y="1000">
+				<p>impress.js does the rest for me?!?!</p>
 			</div>
-			<div id="success-stories" class="module">
-				<div class="row full-width title">
-					<h2>Success Stories</h2>
-				</div>
-				<div class="grid max-width">
-					<div class="col c12-4">
-						<img src="images/success1.jpg">
-						<h4>Gus</h4>
-						<p>"Woof woof ruff woof wag wag"</p>
-					</div>
-					<div class="col c12-4">
-						<img src="images/success2.jpg"></img>
-						<h4>Trapper</h4>
-						<p>"Woof woof woof panting"</p>
-					</div>
-					<div class="col c12-4">
-						<img src="images/success3.jpg"></img>
-						<h4>Bailey</h4>
-						<p>"Woof wag wag ruff sniff"</p>
-					</div>
-					<div class="col c12-4">
-						<img src="images/success4.jpg"></img>
-						<h4>Ace</h4>
-						<p>"Woof ruff wooof ruff sniff"</p>
-					</div>
-					<div class="col c12-4">
-						<img src="images/success5.jpg"></img>
-						<h4>Marilyn</h4>
-						<p>"Woof woof my darling"</p>
-					</div>
-					<div class="col c12-4">
-						<img src="images/success6.jpg"></img>
-						<h4>Boomer</h4>
-						<p>"sniff sniff sniff wag wag wag"</p>
-					</div>
-				</div>
+
+			<div class="step" data-x="3000" data-y="2000" data-rotate-z="180">
+				<p>This is amazing!</p>
 			</div>
-			<div id="contact" class="module">
-				<div class="row full-width title">
-					<h2>Contact</h2>
-				</div>
-				<div class="grid max-width">
-					<div class="col c12-12">
-						<p class="strong">Lawyer Dog</p>
-						<p>123 Dog Pound Ave. Suite #333</p>
-						<p>New York, NY 10018</p>
-						<p>Phone: (917) 123-4567</p>
-					</div>
-					<div id="contact-form" class="col c12-12 contact-form">
-						<a class="btn pill" href="javascript:void(0)"  onclick="toggleEmailForm()">Send Lawyer Dog an Email</a>
-						<form action="pages/subscribe.html">
-							<select>
-								<option>Stuck in Cage</option>
-								<option>Wrongful Coning</option>
-								<option>Need Walking</option>
-							</select><br/>
-							<input type="text" name="emailaddress" value="your.address@email.com"><br/>
-							<input type="radio" name="species" value="human" checked>Human
-							<input type="radio" name="species" value="dog">Dog<br/>
-							<input type="submit" value="Submit" class="btn pill">
-						</form>
-					</div>
-				</div>
+
+			<div class="step" data-x="3000" data-y="3000" data-rotate-z="180" data-rotate-y="180">
+				<p>ZOMG, 3D!!!</p>  
 			</div>
-			<div id="animation" class="module">
-				<div class="row max-width" onclick="addSomeRandomSquares()">
-					<div class="square"></div>
-				</div>
+
+			<div class="step" data-x="3000" data-y="3000" data-rotate-z="180" data-rotate-y="120" data-rotate-x="-40">
+		
 			</div>
-			<footer class="row full-width">
-				This is the end of my website. Woof!
-			</footer>
+
+			<div class="step" data-x="8000" data-y="3000" data-rotate-z="180" data-rotate-y="120" data-scale="20">
+				<p>Zoooooooom!</p>
+			</div>
+
+			<div class="step" data-x="26000" data-y="3000" data-rotate-z="180" data-rotate-y="120" data-scale="20">
+				<img src="images/slide_image.gif">
+			</div>
+		
 		</div>
+		
+		<script type="text/javascript" src="js/impress.js"></script>
 	</body>
 </html>
